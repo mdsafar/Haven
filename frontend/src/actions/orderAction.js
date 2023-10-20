@@ -1,6 +1,7 @@
 
 import axios from "axios";
-const Url = "http://localhost:4000"
+
+const Url = "https://nikoo.onrender.com"
 
 export const createOrder = (order) => async (dispatch) => {
   try {
