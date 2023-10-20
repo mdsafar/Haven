@@ -15,7 +15,6 @@ import { dirname } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-console.log(__dirname)
 
 
 const app = express();
@@ -37,6 +36,13 @@ app.use("/api/v1", product)
 app.use("/api/v1", user)
 app.use("/api/v1", order)
 app.use("/api/v1", bag)
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Handle all other requests by serving the main HTML file
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 
 export default app;
