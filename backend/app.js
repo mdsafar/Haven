@@ -37,9 +37,9 @@ app.use("/api/v1", user)
 app.use("/api/v1", order)
 app.use("/api/v1", bag)
 
-app.get('/src/index.js', (req, res) => {
-  res.setHeader('Content-Type', 'application/javascript');
-  res.sendFile(path.join(__dirname, 'path/to/index.js'));
-});
+app.use(express.static(path.join(__dirname, "../frontend/build")));
 
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
+});
 export default app;
