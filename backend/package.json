@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "nodemon server.js",
-    "build":"npm i"
+    "build": "npm i"
   },
   "name": "backend",
   "version": "1.0.0",
@@ -28,5 +28,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
 }
