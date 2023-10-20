@@ -8,6 +8,13 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import fileUpload from "express-fileupload";
+import path from 'path'
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
 
 
 const app = express();
@@ -29,5 +36,10 @@ app.use("/api/v1", product)
 app.use("/api/v1", user)
 app.use("/api/v1", order)
 app.use("/api/v1", bag)
+
+app.get('/src/index.js', (req, res) => {
+  res.setHeader('Content-Type', 'application/javascript');
+  res.sendFile(path.join(__dirname, 'path/to/index.js'));
+});
 
 export default app;
