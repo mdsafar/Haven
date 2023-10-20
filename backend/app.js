@@ -19,7 +19,7 @@ const __dirname = dirname(__filename);
 
 const app = express();
 const corsOption = {
-  origin: true,
+  origin: "https://niko-d06g.onrender.com",
   credentials: true
 }
 app.use(cors(corsOption))
