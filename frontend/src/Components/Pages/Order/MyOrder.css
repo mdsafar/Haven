@@ -1,0 +1,98 @@
+/* myOrders.css */
+
+.myOrdersPage {
+  margin: 20px 60px;
+}
+
+.myorder_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #E6E6E6;
+}
+
+
+.myorder_detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.myorder_detail>div>p>span {
+  color: #952323;
+  font-weight: 600;
+}
+
+.myorder_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #E6E6E6;
+}
+
+.myorder_img_container {
+  display: flex;
+  width: 100%;
+  gap: 12px;
+}
+
+.myorder_img {
+  width: 60px;
+}
+
+.myorder_img img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.myorder_container h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.myorder_container p {
+  color: #707072;
+  margin-bottom: 1px;
+  font-size: 15px;
+}
+
+.viewOrder button {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  color: white;
+  background-color: #FF6517;
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 20px;
+}
+
+@media (max-width:477px) {
+  .myOrdersPage {
+    margin: 20px;
+  }
+
+  .myorder_detail {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .viewOrder {
+    width: 100%;
+  }
+
+  .viewOrder button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,132 @@
+/* orderDetails.css */
+
+.orderDetailsPage {
+  margin: 30px 100px;
+  padding: 20px;
+  border: 1px solid #E6E6E6;
+  border-radius: 20px;
+}
+
+.orderDetailsContainer {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #E6E6E6;
+}
+
+.orderDetailsContainer h1 {
+  font-size: 26px;
+}
+
+.orderDetailsContainer>p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.orderDetailsContainerBox {
+  margin-top: 10px;
+}
+
+.orderDetailsContainerBox>div>p {
+  margin-bottom: 10px;
+}
+
+.orderDetailsContainerBox>div>span {
+  margin-left: 10px;
+  color: #8d8d8d;
+}
+
+.greenColor {
+  color: green;
+}
+
+.orderDetailsCartItems {
+  margin: 20px 0;
+  width: 60%;
+}
+
+.orderDetailsCartItemsContainer {
+  border: 1px solid #E6E6E6;
+  padding: 15px;
+  margin: 12px;
+  border-radius: 30px;
+}
+
+.orderDetailsCartItems>p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.orderDetailsCartItemsContainer>div {
+  display: flex;
+  gap: 12px;
+}
+
+.orderDetailsCartItemsContainer>div>img {
+  width: 5vmax;
+  border-radius: 10px;
+}
+
+.orderDetailsCartItemsDetails {
+  width: 54%;
+}
+
+.orderDetailsCartItemsDetails>a {
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0 12px;
+  text-decoration: none;
+}
+
+
+.orderDetailsCartItemsContainer>div>span {
+  font-size: 14px;
+  color: #5e5e5e;
+}
+
+/* Add more styling as needed */
+@media (max-width:477px) {
+  .orderDetailsPage {
+    margin: 30px 20px;
+    padding: 10px;
+  }
+
+  .orderDetailsContainer h1 {
+    font-size: 15px;
+  }
+
+  .orderDetailsContainerBox>div>span {
+    margin-bottom: 10px;
+  }
+
+  .orderDetailsContainerBox {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .orderDetailsCartItems {
+    width: 100%;
+  }
+
+  .orderDetailsCartItemsContainer>div {
+    gap: 8px;
+  }
+
+  .orderDetailsCartItemsDetails {
+    width: 40%;
+  }
+
+  .orderDetailsCartItemsContainer>div>span {
+    font-size: 10px;
+  }
+  .orderStatusContainerBox > p{
+    font-size: 16px;
+    margin-left: 0;
+  }
+  .orderDetailsCartItemsDetails>a {
+    margin: 0 6px;
+    font-size: 14px;
+  }
+}

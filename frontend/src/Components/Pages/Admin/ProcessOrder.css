@@ -1,0 +1,178 @@
+
+  .processContainer {
+    margin: 30px 60px;
+  }
+  
+  /* Styles for the confirmation order page */
+  .processOrderPage {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .processDetailsContainer{
+    width: 60%;
+  }
+  /* Styles for the shipping information area */
+  .processShippingInfo {
+    padding: 20px;
+    border: 1px solid #E6E6E6;
+    border-radius: 20px;
+  }
+
+  .processOrderContainer div p{
+    margin-bottom: 10px;
+  }
+  .processOrderContainer {
+    font-size: 15px;
+  }
+  .processDetailsContainer h2{
+    font-size: 22px;
+  }
+  .processOrderContainer > div > span{
+    color: #8d8d8d;
+  }
+
+ 
+  .greenColor {
+    color: green;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-left: 12px;
+  }
+  
+  /* Styles for text indicating a failed payment */
+  .redColor {
+    color: #952323;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-left: 12px;
+  }
+  
+  .processCartItems{
+    margin: 20px 0;
+  }
+
+  .processCartItemsContainer {
+    border: 1px solid #E6E6E6;
+    padding: 15px;
+    border-radius: 30px;
+  }
+  
+  .processCartItems>p {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .processCartItemsContainer>div {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .processCartItemsContainer>div>img {
+    width: 4vmax;
+    border-radius: 10px;
+  }
+  
+  .processCartItemsDetails {
+    width: 50%;
+  }
+  
+  .processCartItemsDetails>a {
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0 12px;
+    text-decoration: none;
+  }
+  
+  
+  .processCartItemsContainer>div>span {
+    font-size: 16px;
+    color: #5e5e5e;
+  }
+
+  .updateProcessContainer{
+    width: 40%;
+  }
+  
+  .updateOrderForm {
+    padding: 20px;
+    border: 1px solid #E6E6E6;
+    border-radius: 20px;
+  }
+  
+  .updateOrderForm h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .updateOrderForm select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  /* Styles for the submit button */
+  #updateProcessBtn {
+    background-color: #FF6517;
+    width: 100%;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+  }
+  
+  #updateProcessBtn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  #updateProcessBtn:hover {
+    background-color: #FF6517;
+  }
+  
+  @media (max-width:477px) {
+    .processContainer {
+      margin: 18px ;
+  }
+  .processOrderPage {
+    flex-direction:column;
+    gap: 12px;
+}
+.processDetailsContainer {
+  width: 100%;
+}
+.updateProcessContainer {
+  width: 100%;
+}
+.processOrderContainer > div> span{
+  margin-bottom: 10px;
+}
+.processShippingInfo > p{
+  font-size: 16px;
+  margin-left: 0;
+}
+.processOrderContainer {
+  margin: 10px;
+}
+.processCartItemsDetails {
+  width: 40%;
+}
+.processCartItemsContainer>div>span {
+  font-size: 14px;
+}
+.processCartItemsContainer>div>img {
+  width: 5vmax;
+}
+.processCartItemsDetails>a {
+  margin: 0 8px;
+}
+  }

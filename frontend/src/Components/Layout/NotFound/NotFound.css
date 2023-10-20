@@ -1,0 +1,29 @@
+.PageNotFound {
+  margin: auto;
+  text-align: center;
+  padding: 10vmax;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ErrorIcon {
+  font-size: 65px;
+  color: #FF6517;
+}
+.PageNotFound > p {
+  font-size: 2vmax;
+}
+.PageNotFound > a {
+  background-color: #FF6517;
+  color: white;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 2vmax;
+}
+  

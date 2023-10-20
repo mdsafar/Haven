@@ -1,0 +1,361 @@
+#prodetails {
+  display: flex;
+
+}
+
+.product-details-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-img-container {
+  width: calc(100% - 456px);
+}
+
+.pro-image {
+  display: flex;
+  flex-direction: row;
+  padding-left: 90px;
+  gap: 14px;
+  margin-top: 48px;
+  position: sticky;
+  top: 120px;
+  max-height: 669px;
+  min-height: 455px;
+}
+
+.main-img img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.main-img {
+  width: 535px;
+  max-width: 500px;
+  height: 669px;
+}
+
+.small-img-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 60px;
+  max-width: 60px;
+  height: 622px;
+  overflow-y: scroll;
+}
+.small-img-container::-webkit-scrollbar{
+  display: none;
+}
+
+.small-img-group {
+  cursor: pointer;
+  width: 60px;
+  height: 70px;
+}
+
+.small-img-group img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.small-img-group::-webkit-scrollbar {
+  display: none;
+}
+
+
+.main-details-container {
+  width: 456px;
+}
+
+.single-pro-details {
+  height: 100%;
+  padding-left: 24px;
+  padding-right: 40px;
+  margin-top: 48px;
+  margin-right: 8px;
+}
+
+.single-pro-details h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.single-pro-details h5 {
+  margin-top: 4px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.single-pro-details h4 {
+  font-size: 16px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.single-pro-details p {
+  color: rgb(117, 117, 117);
+  margin-top: 14px;
+  line-height: 2px;
+  font-weight: 400;
+}
+
+.add-bag button {
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 30px;
+  border: none;
+  background-color: #111;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.add-bag button:nth-child(2) {
+  background-color: #fff;
+  border: 1px solid black;
+  color: black;
+}
+
+#prodetails .about-shoe {
+  margin: 30px 0 40px 0;
+  font-size: 16px;
+}
+
+
+.review-submit-section {
+  border-top: 1px solid #E6E6E6;
+  padding: 30px 0;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.review-box h1 {
+  font-size: 20px;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.review-arrow i {
+  font-weight: bolder;
+}
+
+.review-arrow p i{
+  color: #111;
+  font-size: 14px;
+}
+
+.review-details {
+  margin-top: 15px;
+  height: 320px;
+}
+
+.review-details h3 {
+  font-size: 16px;
+}
+
+.review-stars>div {
+  margin-right: 10px;
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  padding: 3px;
+  border-radius: 20px;
+  background-color: #E6E6E6;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.review-input {
+  margin-top: 15px;
+}
+
+.review-input textarea {
+  padding: 10px;
+  resize: none;
+  width: 100%;
+  outline: none;
+}
+
+.review-input button {
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #111;
+  font-weight: 600;
+  border: none;
+}
+
+.review-stars span i {
+  width: 20px;
+}
+
+.review-container {
+  padding: 30px 0;
+}
+
+.review-container.unreveal {
+  border-bottom: 1px solid #E6E6E6
+}
+
+.reviews-section h1 {
+  font-size: 20px;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.reviews {
+ flex-wrap: wrap;
+ justify-content: center;
+  height: fit-content;
+  padding: 0 40px;
+}
+
+.reviews.unreveal {
+  border-bottom: 1px solid #E6E6E6
+}
+
+.reviewCard {
+  border: 1px solid #E6E6E6;
+  border-radius: 20px;
+  width: 85%;
+  margin: 10px;
+  padding:20px;
+}
+
+
+.user-review-details i {
+  font-size: 24px;
+}
+
+.user-review-details h1 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.reviewCard p {
+  color: rgba(0, 0, 0, 0.836);
+  margin-left: 12px;
+
+}
+
+.reviewCardComment {
+  color: rgba(0, 0, 0, 0.445);
+
+}
+
+.rating {
+  font-weight: bold;
+}
+
+.delete-review i {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.noReviews {
+  font-size: 25px;
+}
+
+.Login-to-review {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.Login-to-review button {
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: #111;
+  color: #fff;
+}
+.star-rating i {
+  font-size: 12px;
+  margin-right: 4px;
+}
+
+@media (max-width: 960px) {
+  #prodetails {
+    flex-direction: column;
+  }
+  .main-img-container {
+    width: 100%;
+  }
+  .main-img img {
+    width: 100%; /* Add this line */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20px;
+  }
+  .main-details-container {
+    width: 100%;
+  }
+  .pro-image {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    gap: 14px;
+    margin-top: 10px;
+    position: unset;
+    max-height: unset; /* Remove max-height */
+  }
+  .main-img {
+    width: 100%; /* Adjust to 100% width */
+    max-width: unset; /* Remove max-width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .small-img-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    max-width: 100%; /* Make sure it doesn't exceed the viewport width */
+    width: auto; /* Allow it to grow horizontally */
+    height: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+  }
+  .img-sec{
+    padding: 0px 25px
+  }
+
+  .small-img-group {
+    width: 80px;
+    height: unset;
+}
+.single-pro-details {
+  padding: 0 25px;
+  margin-right: 0px;
+}
+.review-input button {
+  margin-top: 10px;
+}
+.reviews {
+  padding: 0 20px;
+}
+.reviewCard {
+  width: 100%;
+}
+}
+
+@media (max-width:477px) {
+  .single-pro-details {
+    padding: 0 25px;
+    margin-right: 0px;
+}
+  .img-sec {
+    padding: 0px 25px;
+}
+.small-img-group {
+  min-width: 60px;
+  width: 100px;
+}
+  .reviews {
+    padding: 0 10px;
+  }
+  .add-bag button {
+    margin-top: 20px;
+    padding: 18px;
+}
+}

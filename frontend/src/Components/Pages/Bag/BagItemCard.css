@@ -1,0 +1,120 @@
+.bagItemCard {
+    padding: 22px;
+    width: 100%;
+    border: 1px solid #E6E6E6;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.bag-card-img {
+    padding-right: 16px;
+    width: 160px;
+    min-width: 160px;
+}
+
+.bagItemCard img {
+    border-radius: 20px;
+    width: 100%;
+}
+.bag-detail-container {
+    flex-grow: 1;
+    flex-direction: column;
+}
+.bag-detail-box {
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.bag-card-details {
+    flex-direction: column;
+}
+.bag-card-details a h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+.bag-card-details a{
+    text-decoration: none;
+    color: black;
+}
+
+.bag-price {
+    display: flex;
+    flex-direction: column;
+}
+.bag-card-details span{
+    color: #707072;
+    font-weight: 400;
+}
+.bag-price p {
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.bag-quantity h1{
+    color: #707072;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.bag-quantity select{
+    color: #707072;
+    font-size: 16px;
+    width: 38px;
+    padding-left: 2px;
+    height: 20px;
+   border-radius: 2px;
+   outline: none;
+   border: none;
+}
+
+.bag-delete {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 22px;
+    margin-top: 20px;
+}
+.bag-delete i:hover{
+    cursor: pointer;
+    color: darkred;
+}
+.stock-indicator{
+    font-size: 14px;
+    margin-top: 6px;
+    font-weight: 500;
+    color: darkred;
+}
+
+@media (max-width:477px) {
+    .bag-card-img {
+        width: 100px;
+        min-width: 100px;
+    }
+    .bag-card-details h1 {
+        font-size: 16px;
+    }
+    .bag-card-details span {
+        font-size: 14px;
+    }
+    .bag-quantity h1{
+        font-size: 14px;
+    }
+    .bag-quantity select {
+        font-size: 14px;
+        width: 30px;
+        height: 20px;
+    }
+    .stock-indicator p {
+        font-size: 11px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 600;
+    }
+    .bag-price p {
+        font-size: 11px;
+    }
+    .bag-delete {
+        font-size: 20px;
+        margin-top: 0px;
+    }
+}

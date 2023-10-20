@@ -1,0 +1,113 @@
+.bag-main-container {
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.bagPage {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    vertical-align: top;
+    margin: 0px auto 40px;
+    padding-top: 40px;
+}
+
+.bag-container {
+    display: flex;
+    max-width: 1100px;
+    padding-top: 8px;
+    width: 100%;
+}
+
+.bag_heading h1 {
+    font-size: 30px;
+}
+
+.bag-product-container {
+    flex-basis: 66.6667%;
+    max-width: 66.6667%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.bag-product-container h1 {
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.bag-price-container {
+    width: 370px;
+    margin-bottom: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.bag-price-container h1 {
+    margin-bottom: 24px;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.bag-price-details {
+    width: 100%;
+    padding: 0px 8px;
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+
+.bag-total-amount {
+    align-items: center;
+    border-bottom: 1px solid #E6E6E6;
+    border-top: 1px solid #E6E6E6;
+    padding: 16px 0;
+    margin: 12px 0;
+}
+
+.bag-total-amount h5,
+.bag-total-amount p {
+    margin-bottom: 0;
+}
+
+.bag-total-amount h5 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.bag-price-details button {
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    background-color: #111;
+    color: #fff;
+}
+
+.bag-price-details button:disabled {
+    background-color: #F5F5F5;
+    color: #707072;
+    font-weight: 600;
+    cursor: not-allowed;
+}
+
+@media (max-width:960px) {
+
+    .bag-container {
+     flex-direction: column;
+     gap: 20px;
+    }
+    .bag-product-container {
+        max-width: 100%;
+    }
+    .bag-price-container {
+        width: 100%;
+    }
+    .bag-price-details button {
+        height: 60px;
+        font-size: 18px;
+        border: none;
+        border-radius: 20px;
+    }
+}

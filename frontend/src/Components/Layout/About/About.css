@@ -1,0 +1,29 @@
+.about-container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #E6E6E6;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  
+.about-container >  h1 {
+    font-size: 24px;
+    color: #111;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+.about-container >  p {
+    font-size: 18px;
+    color: #707072;
+    margin: 10px 0;
+  }
+  .about-container > a > i {
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+  }
+  .about-container >a > i:hover{
+    color:#FF6517 ;
+  }

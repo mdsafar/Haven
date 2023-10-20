@@ -1,0 +1,101 @@
+/* productReviews.css */
+.productReviewsContainer {
+  width: 100%;
+  padding: 20px;
+}
+
+.productReviewsForm {
+  padding: 30px;
+  border-radius: 5px;
+  border: 1px solid #E6E6E6;
+  border-radius: 20px;
+}
+.productReviewsForm > h1{
+  font-size: 24px;
+}
+.productReviewsFormHeading {
+  text-align: center;
+  margin: 20px;
+}
+
+.productReviewsForm input {
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#createProductBtn {
+  display: block;
+  background: #FF6517;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.productListTable {
+  margin-top: 20px;
+}
+
+
+
+.allreviews {
+  flex-wrap: wrap;
+  justify-content: center;
+  height: fit-content;
+  padding: 0 40px;
+}
+
+
+
+.allreviewCard {
+  border: 1px solid #E6E6E6;
+  border-radius: 20px;
+  width: 100%;
+  margin: 10px;
+  padding: 20px;
+}
+
+
+.user-allreview-details>div>h1 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.user-allreview-details>div>h1>span {
+  color: rgba(0, 0, 0, 0.445);
+  margin-left: 5px;
+}
+
+.allreviewrating > h1{
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.allreviewrating > p {
+  color: rgba(0, 0, 0, 0.836);
+  margin-left: 0;
+  margin-bottom: 0;
+
+}
+
+.allreviewCardComment {
+  color: rgba(0, 0, 0, 0.445);
+
+}
+
+.allrating {
+  font-weight: bold;
+}
+
+@media (max-width:477px) {
+  .allreviewCard{
+    margin: 10px 0 0 0;
+  }
+  
+}

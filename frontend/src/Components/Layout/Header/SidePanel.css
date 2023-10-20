@@ -1,0 +1,97 @@
+
+.side-panel {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    transition: right 0.3s ease; 
+    z-index: 999;
+  }
+  
+  .side-panel.open {
+    right: 0; 
+  }
+  
+  .close-panel {
+    position: absolute;
+    top: 14px;
+    background-color: transparent;
+    right: 16px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  .close-panel i{
+    font-size: 30px;
+  }
+  
+  .side-menu {
+    margin-top: 15px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px 150px 36px;
+  }
+
+  .side-menu li {
+    padding: 8px;
+  }
+
+  
+  .side-menu li a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    color: #111;
+  }
+  .side-menu li i{
+    font-size: 24px;
+  }
+  .side-menu a.nav_active {
+    color: #FF6517;
+}
+.user-options-toggle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user-options-toggle p{
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+  
+.user-options {
+    padding: 10px;
+    border-radius: 5px;
+   margin-bottom: 12px;
+  }
+  
+  .user-options li {
+    padding: 10px 0;
+    border-bottom: 1px solid #E6E6E6;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    cursor: pointer;
+  }
+  .user-options li a{
+    font-size: 16px;
+  }
+  .user-options li p{
+    margin-bottom: 0;
+    font-weight: 600;
+  }
+  .mobileLogin button{
+    margin: 10px 0;
+    border: none;
+    height: 40px;
+    width: 100%;
+    border-radius: 20px;
+    background: #FF6517;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+  }

@@ -1,0 +1,247 @@
+.sec {
+    padding: 0px 36px 0px 38px;
+}
+
+.hero_heading h1,
+.essential_heading h1 {
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.hero_heading h1 {
+    font-size: 24px;
+}
+
+.essential_heading h1 {
+    font-size: 26px;
+}
+
+.hero_img img {
+    width: 100%;
+}
+
+.hero_img img:nth-child(2) {
+    display: none;
+}
+
+.hero_content {
+    position: relative;
+}
+
+.hero_shop {
+    color: white;
+    width: 500px;
+    position: absolute;
+    bottom: 34px;
+    left: 40px;
+    opacity: 0;
+    transform: translateY(80px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+/* When the .reveal class is added, gradually reveal the element */
+.hero_shop.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hero_shop h1 {
+    font-family: "Futura-CondensedExtraBold", Futura, sans-serif;
+    font-stretch: condensed;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 55px;
+    letter-spacing: -1px;
+}
+
+.hero_shop button {
+    background: white;
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.latest_shop {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.latest_shop.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.latest_shop h1 {
+    font-family: "Futura-CondensedExtraBold", Futura, sans-serif;
+    font-stretch: condensed;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 60px;
+    letter-spacing: -1px;
+}
+
+.latest_shop p {
+    margin-top: 10px;
+    max-width: 70%;
+}
+
+.latest_shop button {
+    background: black;
+    color: white;
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+
+.product_details {
+    margin: 10px 4px 0 0;
+}
+
+.card_container {
+    gap: 12px;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    transition: scroll-behavior 0.3s ease-in-out;
+    white-space: nowrap;
+    /* Prevent cards from wrapping to the next line */
+}
+
+.card_container::-webkit-scrollbar {
+    display: none;
+}
+
+.product_card {
+    border-radius: 20px;
+    border: 1px solid #E6E6E6;
+    scroll-snap-align: start;
+    min-width: 300px;
+    width: 300px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    white-space: normal;
+    vertical-align: top;
+    padding: 10px;
+    margin-right: 12px;
+}
+
+.product_card img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.product_details h4 {
+    margin-bottom: 2px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.price p {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
+
+.details p {
+    color: #707072;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.main_essential {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.essential_content {
+    height: 520px;
+    position: relative;
+}
+
+.essential_btn {
+    background: #fff;
+    padding: 0;
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+}
+
+.char_content {
+    bottom: 30px;
+    left: 40px;
+    position: absolute;
+}
+
+.essential_img img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+}
+
+
+.error-message {
+    width: 100%;
+}
+
+.error-message h1,
+.error-message p {
+    font-size: 30px;
+    color: #707072;
+    font-weight: 600;
+}
+
+
+@media (max-width:870px) {
+    .hero_img img:nth-child(1) {
+        display: none;
+    }
+
+    .hero_img img:nth-child(2) {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width:477px) {
+    .sec {
+        padding: 0px 25px;
+    }
+    .hero_shop {
+        width: 280px;
+        bottom: 24px;
+        left: 10px;
+    }
+    .hero_shop h1 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .hero_shop button {
+        width: 60px;
+        height: 30px;
+        font-size: 14px;
+        margin-top: 1px;
+    }
+    .latest_shop h1 {
+        font-size: 35px;
+        letter-spacing: -1px;
+    }
+    .latest_shop p {
+        margin-top: 10px;
+        max-width: 100%;
+        font-size: 14px;
+    }
+    .product_card{
+        min-width: 250px;
+    }
+}
