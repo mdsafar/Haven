@@ -29,7 +29,6 @@ export const registerUser = async (req, res) => {
          res.cookie("accessToken", token, {
             httpOnly: true,
             expires: new Date(Date.now() + 15 * 24 * 60 * 60 * 1000),
-            secure:true
         });    
        
         return res.status(200).json({
@@ -77,7 +76,6 @@ export const loginUser = async (req, res) => {
          return res.cookie("accessToken", token, {
                 httpOnly: true,
                 expires: new Date(Date.now() + 15 * 24 * 60 * 60 * 1000),
-                secure:true
             }).status(200).json({
                 success: true,
                 message: "Successfully Login",
