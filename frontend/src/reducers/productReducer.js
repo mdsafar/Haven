@@ -48,7 +48,7 @@ export const searchProductReducer = (state = { products: [] }, action) => {
         loading: false,
         products: action.payload
       }
-    case "ADMIN_PRODUCT_FAIL":
+    case "SEARCH_PRODUCT_FAIL":
       return {
         ...state,
         loading: false,
@@ -151,8 +151,8 @@ export const productDetailsReducer = (state={product:{}},action)=>{
   switch (action.type) {
     case "PRODUCT_DETAILS_REQUEST":
       return {
+         ...state,
         loading: true,
-        ...state,
       };
     case "PRODUCT_DETAILS_SUCCESS":
       return {

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const Url = "https://nikoo.onrender.com"
+const Url = "http://localhost:4000"
 
 export const addItemsToBag = (user, product, quantity) => async (dispatch) => {
   try {

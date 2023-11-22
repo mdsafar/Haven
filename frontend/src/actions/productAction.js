@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-const Url = "https://nikoo.onrender.com"
+const Url = "http://localhost:4000"
 
 export const getProducts = () => async (dispatch) => {
   try {
@@ -11,7 +11,8 @@ export const getProducts = () => async (dispatch) => {
       dispatch({ type: "ALL_PRODUCT_SUCCESS", payload: data.Products })
     })
   } catch (err) {
-    dispatch({ type: "ALL_PRODUCT_FAIL", payload: err.response.data.message })
+    console.log(err)
+    dispatch({ type: "ALL_PRODUCT_FAIL", payload: err.response })
   }
 }
 
@@ -82,7 +83,7 @@ export const getProductDetails = (id) => async (dispatch) => {
       dispatch({ type: "PRODUCT_DETAILS_SUCCESS", payload: response.data.product })
     })
   } catch (err) {
-    dispatch({ type: "PRODUCT_DETAILS_FAIL", payload: err.response.data.product })
+    dispatch({ type: "PRODUCT_DETAILS_FAIL", payload: err.response.data.message })
 
   }
 }

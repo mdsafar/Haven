@@ -13,7 +13,6 @@ const ProductReviews = () => {
 
     const { error, reviews, loading } = useSelector((state) => state.productReviews);
 
-    console.log(reviews)
 
     const [productId, setProductId] = useState("");
 

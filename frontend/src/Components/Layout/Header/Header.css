@@ -9,7 +9,6 @@
   position: sticky;
   top: 0;
   background-color: #fff;
-  /* Adjust this to your header background color */
   z-index: 1000;
 }
 
@@ -18,14 +17,6 @@
   justify-content: space-between;
   align-items: center;
   height: 80px;
-}
-
-.logo {
-  height: 80px;
-}
-
-.logo svg {
-  width: 65%;
 }
 
 .nav_items a {
@@ -65,9 +56,11 @@
   border-radius: 50px;
   padding: 2px;
 }
-.bag-icon{
+
+.bag-icon {
   position: relative;
 }
+
 .bag-icon a {
   text-decoration: none;
   color: #333;
@@ -221,7 +214,7 @@
   }
 }
 
-/* Apply the animation to the icon when the 'animate' class is present */
+
 .search_icon.animate {
   animation: iconBounce 0.5s ease-in-out;
 }
@@ -233,14 +226,13 @@
   width: 100%;
   font-size: 15px;
   color: #333;
-  /* Define a transition for smooth changes */
   transition: width 0.2s ease-in-out;
 }
 
-/* Apply animation to the input when the 'animate' class is present */
+
 .search_input.animate {
   width: 200px;
-  /* Adjust the width for the animation */
+
 }
 
 .search_button {
@@ -254,7 +246,7 @@
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-/* Define the animation */
+
 @keyframes buttonPopUp {
   0% {
     visibility: visible;
@@ -267,7 +259,7 @@
   }
 }
 
-/* Apply the animation to the button */
+
 .search_button.pop_up {
   animation: buttonPopUp 0.1s ease 0.45s forwards;
 }
@@ -310,24 +302,24 @@
   .nav_bar {
     height: 70px;
   }
-  .header {
-    padding: 0px 22px;
-  }
 
-  .logo svg {
-    width: 60%;
+  .header {
+    padding-left: 2px;
+    padding-right: 22px;
   }
 
   .search_button {
     margin-left: 0px;
   }
+
   .search_container.open {
     width: 220px;
   }
+
   .search_input.animate {
     width: 120px;
     font-size: 14px;
-}
+  }
 
 
 }

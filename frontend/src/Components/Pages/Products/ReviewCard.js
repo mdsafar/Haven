@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { deleteReview, getProductDetails } from "../../../actions/productAction";
 import { useParams } from "react-router-dom";
 import StarRating from "./StarRating";
-import Loader from "../../Layout/Loader/Loader.js"
 import { useAlert } from "react-alert";
 
 
@@ -11,7 +10,7 @@ const ReviewCard = ({ review }) => {
   const dispatch = useDispatch()
   const alert = useAlert()
   const { user } = useSelector((state) => state.user)
-  const { isDeleted, error, loading } = useSelector((state) => state.review)
+  const { isDeleted, error } = useSelector((state) => state.review)
   const { id } = useParams()
 
   const isUserReview = review.user === user?._id;
@@ -29,15 +28,13 @@ const ReviewCard = ({ review }) => {
       dispatch({ type: "CLEAR_ERRORS" });
     }
     if (isDeleted) {
+      dispatch(getProductDetails(id))
       dispatch({ type: "DELETE_REVIEW_RESET" });
     }
-    dispatch(getProductDetails(id))
-  }, [dispatch,alert,error,isDeleted, id])
+  }, [dispatch, alert, error, isDeleted,id])
+
 
   return <>
-    {loading ? (
-      <Loader/>
-     ) : (
       <div className="reviewCard ">
         <div className="user-review-details d-flex align-items-center justify-content-between">
           <div className="d-flex d-flex align-items-center gap-2">
@@ -53,7 +50,6 @@ const ReviewCard = ({ review }) => {
         <StarRating rating={review.rating} />
         <span className="reviewCardComment">{review.comment}</span>
       </div>
-    )}
   </>
 };
 

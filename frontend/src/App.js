@@ -45,7 +45,7 @@ const {isAuthenticated} = useSelector((state)=> state.user)
       <Route path="/" element={<Featured />} />
       <Route path="/men" element={<Men />} />
       <Route path="/women" element={<Women />} />
-      <Route path="/kid" element={<Kid />} />
+      <Route path="/kids" element={<Kid />} />
       <Route path="/bag" element={ isAuthenticated ? <Bag /> : <Navigate to="/login"/> }/>
       <Route path="/Contact" element={<Contact />} />
       <Route path="/about" element={<About />} />

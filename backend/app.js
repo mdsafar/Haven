@@ -8,18 +8,10 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import fileUpload from "express-fileupload";
-import path from 'path'
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-
 
 const app = express();
 const corsOption = {
-  origin: "https://niko-d06g.onrender.com",
+  origin: true,
   credentials: true
 }
 app.use(cors(corsOption))
@@ -37,9 +29,5 @@ app.use("/api/v1", user)
 app.use("/api/v1", order)
 app.use("/api/v1", bag)
 
-app.use(express.static(path.join(__dirname, "../frontend/public")));
 
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "../frontend/public/index.html"));
-});
 export default app;

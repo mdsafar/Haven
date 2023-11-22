@@ -7,7 +7,7 @@ import { useAlert } from "react-alert"
 import Loader from "../../Layout/Loader/Loader";
 import ReviewCard from "./ReviewCard";
 import StarRating from "./StarRating";
-import { addItemsToBag } from "../../../actions/bagAction";
+import { addItemsToBag, getBagItem } from "../../../actions/bagAction";
 
 const ProductDetails = () => {
     const dispatch = useDispatch()
@@ -25,6 +25,9 @@ const ProductDetails = () => {
     const [hoveredImage, setHoveredImage] = useState("");
 
 
+    useEffect(()=>{
+        dispatch(getProductDetails(id))
+    },[dispatch,id])
 
     function handleReviewToggle() {
         setReviewOpen(!reviewOpen)
@@ -38,14 +41,14 @@ const ProductDetails = () => {
     }
 
     function handleReviewSubmit() {
-        if (rating !== 0) {
+        if (rating !== 0 && comment !== '') {
             const myForm = new FormData();
-
             myForm.set("rating", rating)
             myForm.set("comment", comment)
             myForm.set("productId", id)
-
-            dispatch(newReview(myForm))
+            dispatch(newReview(myForm)).then(()=>{
+                dispatch(getProductDetails(id))
+            })
             setOpen(false)
         }
 
@@ -54,6 +57,7 @@ const ProductDetails = () => {
     function addToBagHandler() {
         if (isAuthenticated) {
             dispatch(addItemsToBag(user._id, id, 1)).then(()=>{
+                dispatch(getBagItem(user._id))
                alert.success('Item Added to Bag')
             })
         } else {
@@ -77,8 +81,7 @@ const ProductDetails = () => {
             alert.success("Review Submitted Successfully");
             dispatch({ type: "NEW_REVIEW_RESET" });
         }
-        dispatch(getProductDetails(id));
-    }, [dispatch, id, alert, success, error, reviewError])
+    }, [dispatch,alert, success, error, reviewError])
 
     return <>
         {loading ? (

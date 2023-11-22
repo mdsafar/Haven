@@ -286,8 +286,8 @@
     width: 100%;
   }
   .main-img img {
-    width: 100%; /* Add this line */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    height: auto;
     border-radius: 20px;
   }
   .main-details-container {
@@ -300,21 +300,21 @@
     gap: 14px;
     margin-top: 10px;
     position: unset;
-    max-height: unset; /* Remove max-height */
+    max-height: unset; 
   }
   .main-img {
-    width: 100%; /* Adjust to 100% width */
-    max-width: unset; /* Remove max-width */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    max-width: unset; 
+    height: auto; 
   }
   .small-img-container {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    max-width: 100%; /* Make sure it doesn't exceed the viewport width */
-    width: auto; /* Allow it to grow horizontally */
+    max-width: 100%; 
+    width: auto;
     height: 100%;
-    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-x: auto; 
   }
   .img-sec{
     padding: 0px 25px

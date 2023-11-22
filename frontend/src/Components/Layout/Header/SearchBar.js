@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { searchProducts } from "../../../actions/productAction";
 import { useDispatch } from "react-redux"
 import { useNavigate } from "react-router-dom";
@@ -9,31 +9,24 @@ const SearchBar = () => {
     const [search, setSearch] = useState(false)
     const [keyword, setKeyword] = useState("");
 
-    useEffect(() => {
-        const savedKeyword = localStorage.getItem("searchKeyword");
-        if (savedKeyword) {
-            setKeyword(savedKeyword);
-        }
-    },[]);
 
-    useEffect(()=>{
+    useEffect(() => {
         dispatch(searchProducts(keyword))
-    },[dispatch,keyword])
+    }, [dispatch, keyword])
 
     function handleClick() {
         setSearch(true)
     }
+
     function handleChange(e) {
         e.preventDefault();
         setSearch(false)
         setKeyword("")
-        localStorage.removeItem("searchKeyword")
     }
-  
-    function handleSearch() {
 
+    function handleSearch() {
         if (keyword.trim() !== "") {
-            localStorage.setItem("searchKeyword", keyword);
+            dispatch(searchProducts(keyword))
         }
 
     }

@@ -3,6 +3,7 @@ import "./Shipping.css";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { saveShippingInfo } from "../../../actions/bagAction";
+import {Country,State} from "country-state-city"
 import {useAlert} from 'react-alert'
 
 const Shipping = () => {
@@ -87,9 +88,13 @@ const Shipping = () => {
             value={country}
             onChange={(e) => setCountry(e.target.value)}
           >
-            <option value="">Country</option>
-            <option value="country1">Country 1</option>
-            <option value="country2">Country 2</option>
+              <option value="">Country</option>
+                {Country &&
+                  Country.getAllCountries().map((item) => (
+                    <option key={item.isoCode} value={item.isoCode}>
+                      {item.name}
+                    </option>
+                  ))}
           </select>
         </div>
 
@@ -100,9 +105,13 @@ const Shipping = () => {
               value={state}
               onChange={(e) => setState(e.target.value)}
             >
-              <option value="">State</option>
-              <option value="state1">State 1</option>
-              <option value="state2">State 2</option>
+             <option value="">State</option>
+                  {State &&
+                    State.getStatesOfCountry(country).map((item) => (
+                      <option key={item.isoCode} value={item.isoCode}>
+                        {item.name}
+                      </option>
+                    ))}
             </select>
           </div>
         )}

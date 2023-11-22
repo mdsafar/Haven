@@ -23,8 +23,8 @@ const Bag = () => {
     useEffect(()=>{
         dispatch(getBagItem(id)) 
         if (isUpdated) {
-            dispatch({ type: "UPDATE_BAG_ITEM", payload: false }); // Set isUpdated back to false
-            dispatch(getBagItem(id)); // Fetch the updated bag items
+            dispatch({ type: "UPDATE_BAG_ITEM", payload: false }); 
+            dispatch(getBagItem(id)); 
           }
      },[dispatch,id,isUpdated])
 

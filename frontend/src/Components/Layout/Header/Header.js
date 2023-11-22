@@ -22,7 +22,7 @@ const nav_link = [
         display: "Women"
     },
     {
-        path: "/kid",
+        path: "/kids",
         display: "Kids"
     }
 ]
@@ -45,8 +45,10 @@ const Header = () => {
   
     
     useEffect(() => {
-        dispatch(getBagItem(id))
-      }, [dispatch,id]);
+        if(isAuthenticated){
+            dispatch(getBagItem(id))
+        }
+      }, [dispatch,id,isAuthenticated]);
 
    
     return <>
@@ -70,7 +72,7 @@ const Header = () => {
                     <span className="item-count">{bagItems.length}</span>
                   )}</Link>
                         </div>
-                  { isAuthenticated && user ? (
+                  {isAuthenticated && user ? (
                          <div className="options">
                            <UserOptions/>
                            </div>
