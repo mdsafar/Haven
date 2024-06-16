@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import {useDispatch,useSelector} from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import { Col, Row } from "reactstrap"
 import "./Featured.css"
 import ProductCard from "./ProductCard";
@@ -9,29 +9,29 @@ import Loader from "../../Components/Loader/Loader";
 import { useAlert } from "react-alert";
 
 const Featured = () => {
-    const dispatch = useDispatch()
-    const alert = useAlert()
-    const {products,loading, error} = useSelector((state)=> state.products)
-    const product = products?.slice(0,10)
+   const dispatch = useDispatch()
+   const alert = useAlert()
+   const { products, loading, error } = useSelector((state) => state.products)
+   const product = products?.slice(0, 10)
 
 
-   useEffect(()=>{
-      if(error){
+   useEffect(() => {
+      if (error) {
          alert.error(error)
-         dispatch({type:"CLEAR_ERRORS"})
+         dispatch({ type: "CLEAR_ERRORS" })
       }
-     dispatch(getProducts()) 
-   },[dispatch,alert,error])
+      dispatch(getProducts())
+   }, [dispatch, alert, error])
 
    return <>
-      <Posters />
-      { loading ? (
-        <Loader/>
-     ) : (
-      <section>
-         <div className="sec">
-            <Row>
-               <Col>
+      <Posters product={product}/>
+      {loading ? (
+         <Loader />
+      ) : (
+         <section>
+            <div className="sec">
+               <Row>
+                  <Col>
                      <div className="product_lists">
                         <div className="hero_heading">
                            <h1>See What's New</h1>
@@ -42,13 +42,13 @@ const Featured = () => {
                            })}
                         </div>
                      </div>
-               </Col>
-            </Row>
-         </div>
-      </section> 
+                  </Col>
+               </Row>
+            </div>
+         </section>
       )
       }
-     
+
    </>
 }
 

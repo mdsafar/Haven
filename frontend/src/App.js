@@ -30,6 +30,8 @@ import UpdateProduct from "./Pages/Admin/Products/UpdateProduct";
 import ProductReviews from "./Pages/Admin/Products/ProductReviews";
 import AdminRoute from "./Route/AdminRoute";
 import RouteLayout from "./Route/RouteLayout";
+import MyStore from "./Pages/Store/MyStore.js";
+import Stores from "./Pages/Store/Stores.js";
 
 
 
@@ -41,6 +43,7 @@ const App = () => {
       <Routes>
         <Route element={<RouteLayout />}>
           <Route path="/" element={<Featured />} />
+          <Route path="/stores" element={<Stores />} />
           <Route path="/men" element={<Men />} />
           <Route path="/women" element={<Women />} />
           <Route path="/kids" element={<Kid />} />
@@ -56,6 +59,7 @@ const App = () => {
         </Route>
         <Route element={<ProtectedRoute />}>
           <Route path="/me/update" element={<UpdateProfile />} />
+          <Route path="/my-store" element={<MyStore />} />
           <Route path="/shipping" element={<Shipping />} />
           <Route path="/order/confirm" element={<ConfirmOrder />} />
           <Route path="/orders" element={<MyOrders />} />

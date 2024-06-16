@@ -1,5 +1,8 @@
 .sec {
-    padding: 0px 36px 0px 38px;
+    padding: 3.2rem 0px 0px 0px;
+}
+.carousel.carousel-slider .slider-wrapper .slide{
+   height: 16rem;
 }
 
 .hero_heading h1,
@@ -30,37 +33,30 @@
 
 .hero_shop {
     color: white;
-    width: 500px;
     position: absolute;
-    bottom: 34px;
-    left: 40px;
-    opacity: 0;
-    transform: translateY(80px);
-    transition: opacity 0.9s ease, transform 0.9s ease;
+    left: 80px;
+    text-align: left;
+    bottom: 45px;
 }
 
-/* When the .reveal class is added, gradually reveal the element */
-.hero_shop.reveal {
-    opacity: 1;
-    transform: translateY(0);
-}
+
 
 .hero_shop h1 {
     font-family: "Futura-CondensedExtraBold", Futura, sans-serif;
     font-stretch: condensed;
     font-weight: bold;
-    font-size: 50px;
-    line-height: 55px;
+    font-size: 36px;
     letter-spacing: -1px;
+    margin-bottom: 0;
 }
 
 .hero_shop button {
-    background: white;
-    width: 80px;
-    height: 40px;
+    background: black;
+    padding: 6px 20px;
     border: none;
     border-radius: 20px;
-    margin-top: 10px;
+    margin-top: 6px;
+    color: white;
 }
 
 .latest_shop {
@@ -201,6 +197,12 @@
     font-weight: 600;
 }
 
+.control-dots{
+    display: flex;
+    justify-content: center;
+    
+}
+
 
 @media (max-width:870px) {
     .hero_img img:nth-child(1) {
@@ -215,7 +217,8 @@
 
 @media (max-width:477px) {
     .sec {
-        padding: 0px 25px;
+        padding-top: 3.5rem !important;
+        padding: 0px;
     }
     .hero_shop {
         width: 280px;

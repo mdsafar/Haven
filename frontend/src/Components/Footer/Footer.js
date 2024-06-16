@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-container">
       <div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="60" height="40">
-                <text x="50%" y="40%" textAnchor="middle" alignmentBaseline="middle" fontFamily="Gabarito,sans-serif" fontSize="45" fill="#fff" fontWeight="bold">SH</text>
+                <text x="50%" y="40%" textAnchor="middle" alignmentBaseline="middle" fontFamily="Gabarito,sans-serif" fontSize="45" fill="#fff" fontWeight="bold">H</text>
             </svg>
       </div>
       <div className="footer-section">
@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-copyright">
-        <span className="copyright-text">©{new Date().getFullYear()} <span>SoleHaven</span> by Safar</span>
+        <span className="copyright-text">©{new Date().getFullYear()} <span>Haven</span> by Safar</span>
       </div>
     </footer>
   );

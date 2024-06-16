@@ -14,6 +14,10 @@ const nav_link = [
         display: "Featured"
     },
     {
+        path: "/stores",
+        display: "Stores"
+    },
+    {
         path: "/men",
         display: "Men"
     },
