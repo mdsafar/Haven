@@ -4,6 +4,7 @@ import product from "./routes/productRoute.js"
 import user from "./routes/userRoute.js"
 import order from "./routes/orderRoute.js"
 import bag from "./routes/bagRoute.js"
+import store from "./routes/storeRoute.js"
 import bodyParser from "body-parser";
 import cors from "cors";
 import cookieParser from "cookie-parser";
@@ -28,6 +29,7 @@ app.use("/api/v1", product)
 app.use("/api/v1", user)
 app.use("/api/v1", order)
 app.use("/api/v1", bag)
+app.use("/api/v1", store)
 
 
 export default app;
