@@ -4,6 +4,7 @@ const Url = "http://localhost:4000"
 
 export const addItemsToBag = (user, product, quantity) => async (dispatch) => {
   try {
+    
     const config = {
       headers: {
         "Content-Type": "application/json",
