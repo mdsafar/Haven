@@ -3,6 +3,7 @@ import Bag from '../models/bagModel.js'
 
 export const addTobag = async (req, res) => {
     try {
+        
         const { user, product, quantity } = req.body;
 
         // Check if the item already exists in the bag
