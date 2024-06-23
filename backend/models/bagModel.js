@@ -17,4 +17,5 @@ const bagShema = new mongoose.Schema({
     }
 })
 
+
 export default mongoose.model('bag',bagShema)
