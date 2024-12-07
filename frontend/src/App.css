@@ -2,26 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-margin: 0;
-scroll-behavior: smooth;
--moz-user-select: none;
--webkit-user-select: none;
--ms-user-select: none;
-user-select: none;
-
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-html,body{
-   overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
 
-ul{
-   list-style: none;
+ul {
+  list-style: none;
 }
-section{
-   padding: 40px 0px;
+section {
+  padding: 40px 0px;
 }
-a{
-   text-decoration: none;
+a {
+  text-decoration: none;
 }
