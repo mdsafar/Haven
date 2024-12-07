@@ -84,7 +84,6 @@ export const getProductDetails = (id) => async (dispatch) => {
     })
   } catch (err) {
     dispatch({ type: "PRODUCT_DETAILS_FAIL", payload: err.response.data.message })
-
   }
 }
 
